@@ -131,8 +131,12 @@ h3 {
 /*---------------------main3--------------------- */
 
 .leam {
-  padding: 70px 220px;
+  padding: 70px 200px;
   background: #fff7fb;
+}
+
+.leam__img img{
+  width: 350px;
 }
 
 .No {
@@ -140,13 +144,6 @@ h3 {
   font-weight: bold;
   font-size: 40px;
   margin-right: 15px;
-}
-
-.leam__solution__left {
-  margin-right: 100px;
-}
-.leam__solution__right {
-  margin-left: 100px;
 }
 
 .text {
@@ -159,15 +156,18 @@ h3 {
   margin-bottom: 25px;
 }
 
-.leam01__wrap, .leam02__wrap {
+.leam01__wrap,
+.leam02__wrap {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
+  justify-content: space-between;
 }
 
 .leam03__wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /*---------------------leam--------------------- */
@@ -177,14 +177,16 @@ h3 {
   border-radius: 6px;
   padding: 10px 25px;
   margin: 10px;
+  justify-content: center;
 }
 
 .function-list__wrap {
   padding: 70px 0;
 }
 
-.function__item__wrap{
+.function__item__wrap {
   display: flex;
+  justify-content: space-between;
 }
 
 .function__item {
@@ -390,7 +392,7 @@ footer {
   background-color: #fff7fb;
 }
 
-.footer__wrap{
+.footer__wrap {
   padding: 70px 220px;
   justify-content: space-between;
   display: flex;
@@ -407,171 +409,198 @@ footer {
 
 /*---------------------footer--------------------- */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
 
-h1 {
-  font-size: 32px;
-  margin-top: 10px;
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  /*------------------------------------------ */
+
+  .header__item,
+  .header__inquiry {
+    display: none;
+  }
+
+  .header__logo {
+    margin-left: 20px;
+  }
+
+  /*---------------------header-------------------- */
+
+  .main1 {
+    background-image: url("img/img4/fv__bg-sp.svg");
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .box1__setence {
+    margin-bottom: 500px;
+  }
+
+  .firstview img {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+  }
+
+  .download {
+    width: 195px;
+    padding: 20px 70px;
+    border-radius: 40px;
+  }
+
+  /*---------------------main1--------------------- */
+
+  .main2 {
+    position: relative;
+    flex-direction: column;
+    padding: 130px 0 70px 20px;
+  }
+
+  .about__img {
+    width: 337.5px;
+  }
+
+  .order {
+    font-size: 16px;
+    position: absolute;
+    top: 70px;
+    margin: 0px;
+  }
+
+  /*---------------------main2--------------------- */
+
+  .trouble__wrap {
+    flex-direction: column;
+  }
+
+  .trouble__sentence {
+    font-size: 16px;
+    margin: auto;
+  }
+
+  .trouble1,
+  .trouble2,
+  .trouble3 {
+    display: flex;
+  }
+
+  .trouble2{
+    flex-flow: row-reverse;
+  }
+
+  .trouble1 img,
+  .trouble2 img,
+  .trouble3 img {
+    width: 118px;
+  }
+
+  /*---------------------trouble--------------------- */
+
+  .leam {
+    padding: 70px 0px;
+  }
+
+  .leam01__wrap,
+  .leam02__wrap,
+  .leam03__wrap {
+    width: 338px;
+    flex-direction: column;
+  }
+
+.leam02__wrap{
+  flex-flow: column-reverse;
 }
 
-h2 {
-  font-size: 26px;
-}
+  .function__item__wrap {
+    flex-direction: column;
+  }
 
-h3 {
-  font-size: 22px;
-}
+  .text p{
+    width: 338px;
+    margin:0px;
+  }
 
-/*------------------------------------------ */
+  .leam__sentence {
+    width: 338px;
+  }
 
-.header__item,  .header__inquiry {
-  display:none
-}
+  .leam__img img{
+    width: 380px;
+  }
 
-.header__logo{
-  margin-left: 20px;
-}
-
-
-/*---------------------header-------------------- */
-
-.main1{
-  background-image: url("img/img4/fv__bg-sp.svg");
-  padding-left:20px;
-  position: relative;
-}
-
-.box1__setence{
-  margin-bottom: 500px;
-}
-
-.firstview img{
-  position: absolute;
-  top: 230px;
-  left:20px;
-}
-
-.download {
-  width: 195px;
-  padding: 20px 70px;
-  border-radius: 40px;
-}
-
-/*---------------------main1--------------------- */
-
-.main2{
-  position: relative;
+.solution__heading{
   flex-direction: column;
-  padding:130px 0 70px 20px;
 }
 
-.about__img{
-  width:337.5px
-}
+  .No {
+    font-size: 16px;
+  }
 
-.order{
-  font-size: 16px;
-  position:absolute;
-  top: 70px;
-  margin:0px;
-}
+  /*---------------------leam--------------------- */
 
-/*---------------------main2--------------------- */
+  .cost__wrap {
+    padding: 70px 0 30px 0;
+  }
 
-.trouble__wrap{
-  flex-direction: column;
-}
+  .cost__item__wrap {
+    flex-direction: column;
+  }
 
-.trouble__sentence {
-  font-size: 16px;
-}
+  .cost__item1,
+  .cost__item2 {
+    margin-bottom: 40px;
+  }
 
-.trouble1, .trouble2, .trouble3 {
-  display: flex;
-}
+  /*---------------------cost--------------------- */
 
-.trouble1, .trouble2, .trouble3 img {
-  width: 118px;
-}
+  .Q__wrap,
+  .A__wrap {
+    width: 315px;
+  }
 
-/*---------------------trouble--------------------- */
+  /*---------------------質問--------------------- */
 
-.leam{
-  padding:70px 0px;
-}
+  .inquiry-button {
+    flex-direction: column;
+    width: 338px;
+  }
 
-.leam01__wrap, .leam02__wrap, .leam03__wrap {
-  flex-direction: column;
-}
+  .inquiry__ttitle {
+    font-size: 20px;
+  }
 
-.function__item__wrap {
-  flex-direction: column;
-}
+  .inquiry__registration {
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
 
-.No {
-  font-size: 16px;
-}
+  /*---------------------inquiry--------------------- */
 
-.leam__solution__left {
-  margin-right: 0px;
-}
-.leam__solution__right {
-  margin-left: 0px;
-}
+  .footer__wrap {
+    flex-direction: column;
+    padding: 70px 20px 70px 0px;
+  }
 
-/*---------------------leam--------------------- */
+  .footer__logo {
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 
-.cost__wrap {
-  padding: 70px 0 30px 0;
-}
+  .footer__item1,
+  .footer__item2 {
+    margin-left: 70px;
+  }
 
-.cost__item__wrap {
-  flex-direction: column;
-}
-
-.cost__item1, .cost__item2{
-  margin-bottom: 40px;
-}
-
-/*---------------------cost--------------------- */
-
-.Q__wrap, .A__wrap{
-  width: 315px;
-}
-
-/*---------------------質問--------------------- */
-
-.inquiry-button {
-  flex-direction: column;
-  width: 338px;
-}
-
-.inquiry__ttitle {
-font-size: 20px;
-}
-
-.inquiry__registration {
-  margin-bottom: 25px;
-  margin-right: 0px;
-}
-
-/*---------------------inquiry--------------------- */
-
-.footer__wrap {
-  flex-direction: column;
-  padding: 70px 20px 70px 0px;
-}
-
-.footer__logo{
-  width: 150px;
-  margin-left: 20px;
-  margin-bottom:20px;
-}
-
-.footer__item1, .footer__item2{
-  margin-left: 70px;
-}
-
-/*---------------------footer--------------------- */
-
+  /*---------------------footer--------------------- */
 }
