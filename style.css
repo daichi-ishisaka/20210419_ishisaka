@@ -149,7 +149,6 @@ h3 {
 }
 
 .solution__heading {
-  height: 76px;
   align-items: center;
   display: flex;
   margin-bottom: 25px;
@@ -200,7 +199,7 @@ h3 {
   background-color: #e37ab0;
 }
 
-.inquiry__ttitle {
+.inquiry__ttitle1, .inquiry__ttitle2 {
   color: white;
 }
 
@@ -240,7 +239,7 @@ h3 {
   justify-content: space-between;
 }
 
-.company__item {
+.company__item, .company__item2, .company__item3, .company__item4, .company__item5 {
   position: relative;
   width: 260px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
@@ -500,7 +499,11 @@ footer {
     flex-direction: column;
   }
   .No {
+    margin-right: auto;
     font-size: 16px;
+  }
+  .leam__sentence {
+    margin-right: auto;
   }
   /*---------------------leam--------------------- */
   .function__item__wrap {
@@ -527,17 +530,36 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  .inquiry-button p {
-    text-align: center;
+  .inquiry__ttitle1 {
+    padding: 0 25px;
   }
-  .inquiry__ttitle {
+  .inquiry__ttitle1, .inquiry__ttitle2 {
     font-size: 20px;
   }
   .inquiry__registration {
+    width: 338px;
     margin-bottom: 25px;
-    margin-right: 0px;
+    margin: auto auto 25px auto;
+  }
+  .inquiry-download {
+    width: 338px;
+    margin: auto;
   }
   /*---------------------inquiry--------------------- */
+  .company__item2, .company__item3, .company__item4, .company__item5 {
+    display: none;
+  }
+  .company__item {
+    width: 338px;
+    margin: auto;
+  }
+  .company__item img {
+    width: 338px;
+  }
+  .company__item img:not(img) {
+    width: 100%;
+  }
+  /*---------------------company--------------------- */
   .footer__wrap {
     flex-direction: column;
     padding: 70px 20px 70px 0px;
