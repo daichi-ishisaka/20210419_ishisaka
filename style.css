@@ -286,55 +286,52 @@ h3 {
   align-items: center;
 }
 
-.cost__item1 {
+.cost__item {
   width: 333px;
-  height: 270px;
   text-align: center;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   border: solid 2px #dddddd;
-  border-radius: 10px;
-}
-
-.cost__item2 {
-  width: 333px;
-  height: 324px;
-  text-align: center;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  border: solid 2px #dddddd;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .plan1 {
   color: white;
   background-color: #6f99e3;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   padding: 10px 0px;
+  line-height: 1.2;
 }
 
 .plan2 {
   color: white;
   background-color: #e37ab0;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   padding: 10px 0px;
+  line-height: 1.3;
 }
 
-span2 {
+.price {
   font-size: 38px;
   font-weight: bold;
 }
 
-.cost__sentence {
+.cost__sentence__wrap {
   padding: 30px;
 }
 
-.cost__sentence p {
+.cost__sentence {
   color: #535353;
   width: 273px;
   border-bottom: solid 1px #dedede;
+  padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-.申し込むボタン {
+span {
+  font-size: 22px;
+}
+
+.Apply {
   width: 273px;
   border-radius: 30px;
   background-color: #e8e8e8;
@@ -423,7 +420,7 @@ footer {
   /*---------------------header-------------------- */
   .main1 {
     background-image: url("img/img4/fv__bg-sp.svg");
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     position: relative;
   }
   .box1__setence {
@@ -462,12 +459,13 @@ footer {
   }
   .trouble__sentence {
     font-size: 16px;
-    margin: auto;
+    margin-top: 53px;
   }
   .trouble1,
   .trouble2,
   .trouble3 {
     display: flex;
+    justify-content: center;
   }
   .trouble2 {
     flex-flow: row-reverse;
@@ -486,6 +484,10 @@ footer {
   .leam03__wrap {
     flex-direction: column;
   }
+  .leam01__wrap,
+  .leam02__wrap {
+    margin-bottom: 40px;
+  }
   .leam__img img, .leam__solution__left, .leam__solution__right {
     width: 338px;
   }
@@ -500,7 +502,7 @@ footer {
   }
   .No {
     margin-right: auto;
-    font-size: 16px;
+    font-size: 26px;
   }
   .leam__sentence {
     margin-right: auto;
@@ -516,8 +518,7 @@ footer {
   .cost__item__wrap {
     flex-direction: column;
   }
-  .cost__item1,
-  .cost__item2 {
+  .cost__item {
     margin-bottom: 40px;
   }
   /*---------------------cost--------------------- */
@@ -546,8 +547,12 @@ footer {
     margin: auto;
   }
   /*---------------------inquiry--------------------- */
-  .company__item2, .company__item3, .company__item4, .company__item5 {
-    display: none;
+  .company__wrap {
+    padding: 70px 0 40px 0;
+  }
+  .company__item__wrap {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .company__item {
     width: 338px;
@@ -555,9 +560,7 @@ footer {
   }
   .company__item img {
     width: 338px;
-  }
-  .company__item img:not(img) {
-    width: 100%;
+    max-width: initial;
   }
   /*---------------------company--------------------- */
   .footer__wrap {
@@ -572,6 +575,9 @@ footer {
   .footer__item1,
   .footer__item2 {
     margin-left: 70px;
+  }
+  .architecture {
+    top: 215px;
   }
   /*---------------------footer--------------------- */
 }
