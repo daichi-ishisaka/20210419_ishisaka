@@ -76,17 +76,13 @@ h3 {
 }
 
 .main1 {
+  flex-flow: row-reverse;
   background: url(./img/img4/fv__bg-pc.svg);
   background-position: top;
   background-size: cover;
   padding: 40px 220px;
-  position: relative;
-}
-
-.box1 img {
-  position: absolute;
-  top: 40px;
-  left: 800px;
+  height: 522px;
+  display: flex;
 }
 
 .download {
@@ -439,15 +435,11 @@ footer {
   .main1 {
     background-image: url("img/img4/fv__bg-sp.svg");
     padding: 0 0 0 20px;
-  }
-  .box1 img {
-    position: static;
+    flex-direction: column;
+    height: 698px;
   }
   .box1__setence {
     width: 337px;
-  }
-  .firstview {
-    flex-flow: column-reverse;
   }
   .download__button {
     width: 337px;
